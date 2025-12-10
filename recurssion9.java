@@ -1,4 +1,8 @@
-public class recurssion9 {
+
+//find first and last occurance of an element in string
+
+import java.util.Scanner;
+public class recurssion9{
     public static int fir=-1;
     public static int las=-1;
     public static void findOccr(String str,int idx,char ele){
@@ -18,8 +22,9 @@ public class recurssion9 {
         findOccr(str, idx+1, ele);
     }
     public static void main(String[] args) {
-        String str = "shaik zaid and am from nandyal";
-        findOccr(str, 0, 'a');
+        Scanner sc = new Scanner(System.in);
+        String str=sc.nextLine();
+        char ele=sc.next().charAt(0);
+        findOccr(str, 0, ele);
     }
 }
-//find first and last occurance of an element in string
